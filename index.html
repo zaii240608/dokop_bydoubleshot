@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOKOP by Double Shot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <img src="img/logo.png" alt="DOKOP Logo" class="navbar-logo" />
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <p class="small-text">WELCOME TO</p>
+      <img src="img/logo.png" alt="DOKOP Logo" class="hero-logo" />
+
+      <div class="hero-title-container">
+        <div class="hero-title-main">
+          <div> <b>DOKTER</b></div>
+          <div class="kopi-subtitle-row">
+            <span> <b>KOPI</b> </span>
+            <span class="hero-title-sub">By<br>Double<br>Shot</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="desc">
+        The best coffee to accompany your evenings,
+        college assignments, and endless conversations.
+      </p>
+
+      <div class="buttons">
+        <button class="btn1">Order Now!!</button>
+        <button class="btn2">See Menu</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU -->
+
+  <section class="menu" id="menu">
+
+    <h2 class="title">Best Menu</h2>
+
+    <div class="menu-container">
+
+      <div class="card">
+        <i class="fa-solid fa-mug-hot"></i>
+        <h3>Black Lemonade</h3>
+        <p>Strong taste and refreshing.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-coffee"></i>
+        <h3>Butterscotch</h3>
+        <p>Smooth and creamy favorite.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Matcha</h3>
+        <p>Fresh matcha blended with creamy milk perfection.</p>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;">
+      <a href="menu.html" class="btn1" style="display: inline-block; text-decoration: none; padding: 14px 28px; border-radius: 40px; font-size: 16px; cursor: pointer; background: #6B2A3E; color: white; border: none; transition: 0.3s;">See All Menu</a>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="about-text">
+
+      <h2>About DOKOP</h2>
+      
+      <div class="card">
+        <p>
+          Dokter Kopi by Double Shot serves various coffee & non-coffee drinks with affordable prices, all variants start from 15K. A comfy place to slow down, chill, and enjoy your coffee time.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p class="contact-desc">
+      Hubungi kami untuk reservasi dan informasi.
+    </p>
+
+    <div class="contact-container">
+
+      <!-- WHATSAPP -->
+
+      <div
+        class="contact-card"
+        onclick="window.open('https://wa.me/6282260296709')"
+      >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <h3>WhatsApp</h3>
+
+        <p>Chat us anytime for your coffee needs.</p>
+
+      </div>
+
+      <!-- INSTAGRAM -->
+
+      <div
+        class="contact-card"
+        onclick="window.open('https://www.instagram.com/dokterkopi_?igsh=a3FvYTA4Z2tmdDU=')"
+      >
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <h3>Instagram</h3>
+
+        <p>Click here to DM us!!</p>
+
+      </div>
+
+      <!-- MAPS -->
+
+      <div
+      class="contact-card"
+      onclick="openLocationPopup()"
+      >
+      <i class="fa-solid fa-location-dot"></i>
+        <h3>Location</h3>
+        <p>Tasikmalaya, Jawa Barat, Indonesia</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOCATION POPUP -->
+
+  <div class="location-popup" id="locationPopup">
+    <div class="location-popup-box">
+      <h2>Pilih Lokasi</h2>
+      <p>Kami memiliki 2 lokasi yang dapat Anda kunjungi:</p>
+
+      <div class="location-options">
+        <button class="location-btn" onclick="openLocation('https://www.google.com/maps/search/?api=1&query=Dokter+Kopi+by+DoubleShot+Tasikmalaya')">
+          <span class="location-name">📍 Lokasi 1</span>
+          <span class="location-address">Tasikmalaya, Jawa Barat</span>
+        </button>
+        <button class="location-btn" onclick="openLocation('https://www.google.com/maps/search/?api=1&query=Dokter+Kopi+by+DoubleShot+Bandung')">
+          <span class="location-name">📍 Lokasi 2</span>
+          <span class="location-address">Bandung, Jawa Barat</span>
+        </button>
+      </div>
+
+      <button class="close-location-btn" onclick="closeLocationPopup()">Tutup</button>
+    </div>
+  </div>
+
+
+  <!-- POPUP -->
+
+  <div class="popup" id="popup">
+
+    <div class="popup-box">
+
+      <h2>Orders ☕</h2>
+
+      <p>
+        You will be redirected to the contact section
+        for orders your coffee.
+      </p>
+
+      <div class="popup-buttons">
+
+        <button id="cancelBtn">
+          Cancel
+        </button>
+
+        <button id="confirmBtn">
+          Continue
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 DOKOP by Double Shot</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

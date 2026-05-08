@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - DOKOP by Double Shot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <img src="img/logo.png" alt="DOKOP Logo" class="navbar-logo" />
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MENU SECTION -->
+  <section class="menu-detail" id="menu-section">
+    <h2>Semua Menu Kami ☕</h2>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Cards akan di-generate oleh JavaScript -->
+    </div>
+
+    <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Kembali</a>
+  </section>
+
+  <!-- SIZE POPUP -->
+  <div class="size-popup" id="sizePopup">
+    <div class="size-popup-box">
+      <h2 id="popupMenuName">Menu Name</h2>
+      <p>Pilih Ukuran & Harga:</p>
+
+      <div class="size-options" id="sizeOptions">
+        <!-- Size options akan di-generate oleh JavaScript -->
+      </div>
+
+      <div class="popup-actions">
+        <button class="cancel-size-btn" onclick="closeSizePopup()">Batal</button>
+        <button class="confirm-order-btn" onclick="confirmOrder()">Order ke WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 DOKOP by Double Shot</p>
+  </footer>
+
+  <script src="menu-script.js"></script>
+
+</body>
+</html>
